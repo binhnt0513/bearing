@@ -1,0 +1,17 @@
+
+mixin breadcrumb-classic(title, breadcrumbs, images)
+  // Classic Breadcrumbs
+  section.breadcrumb-classic
+    .rd-parallax
+      .rd-parallax-layer(data-speed='0.25', data-type='media', data-url="images/" + images + ".jpg")
+      .rd-parallax-layer.section-top-75.section-md-top-150.section-lg-top-260(data-speed='0', data-type='html')
+        .shell
+          ul.list-breadcrumb
+            each link, index in breadcrumbs
+              if breadcrumbs[parseInt(index) + 1]
+                li
+                  a(href=link.href)= link.title
+              else
+                li
+                  = link.title
+  

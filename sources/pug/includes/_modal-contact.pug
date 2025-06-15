@@ -1,0 +1,30 @@
+// Modal login window
+#modalContact.modal.fade(role='dialog')
+	.modal-wrap
+		.modal-dialog.modal-dialog_custom
+			// Modal content
+			.modal-content
+				.modal-body
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span &times;
+					.modal-title
+						h5 Make an Appointment
+				
+					// RD Mailform
+					form.rd-mailform.text-left(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+						.range.offset-top-40.offset-md-top-60
+							.cell-md-12
+								.form-group.postfix-xl-right-40
+									label.form-label(for="modal-contact-name") Name *
+									input#modal-contact-name.form-control(type="text" name="name" data-constraints="@Required")
+								.form-group.postfix-xl-right-40
+									label.form-label(for="modal-contact-email") E-mail *
+									input#modal-contact-email.form-control(type="email" name="email" data-constraints="@Email @Required")
+								.form-group.postfix-xl-right-40
+									label.form-label(for="modal-contact-phone") Phone *
+									input#modal-contact-phone.form-control(type="text" name="phone" data-constraints="@PhoneNumber @Required")
+								.form-group.postfix-xl-right-40
+									label.form-label(for="modal-contact-company") Company *
+									input#modal-contact-company.form-control(type="text" name="company" data-constraints="@Required")
+						button(type="submit").btn.btn-form.btn-default Send
+='\n'

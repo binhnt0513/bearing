@@ -1,0 +1,49 @@
+// RD Navbar Nav
+ul.rd-navbar-nav
+	li(class=(activeIndex == 0 ? 'active' : ''))
+		a(href='index.html') Home
+	li(class=(activeIndex == 1 ? 'active' : ''))
+		a(href='about.html') About Us
+		// RD Navbar Dropdown
+		ul.rd-navbar-dropdown
+			li: a(href='testimonials.html') Testimonials
+			li: a(href='our-team.html') Our team
+			li: a(href='careers.html') Careers
+			li: a(href='history.html') History
+			li: a(href='press-about-us.html') Press
+			li: a(href='faq.html') FAQ
+	
+	li(class=(activeIndex == 2 ? 'active' : ''))
+		a(href='#') Services
+		ul.rd-navbar-dropdown
+			li: a(href='#') Single service
+	
+	li(class=(activeIndex == 3 ? 'active' : ''))
+		a(href='products.html') Products
+		ul.rd-navbar-dropdown
+			li: a(href='#') Single product
+	li(class=(activeIndex == 4 ? 'active' : ''))
+		a(href='blog.html') Blog
+		// RD Navbar Dropdown
+		ul.rd-navbar-dropdown
+			li: a(href='#') Post page
+	
+	li(class=(activeIndex == 5 ? 'active' : ''))
+		a(href='contacts.html') Contact us
+	li(class=(activeIndex == 6 ? 'active' : ''))
+		a(href='#') Pages
+		ul.rd-navbar-dropdown
+			li: a(href='typography.html') Typography
+			li: a(href='tabs.html') Tabs
+			li: a(href='buttons.html') Buttons
+			li: a(href='grid.html') Grid
+			li: a(href='table.html') Tables
+			li: a(href='forms.html') Forms
+			li: a(href='icons.html') Icons
+			li: a(href='site-map.html') Site Map
+			li: a(href='404-page.html') 404 Page
+			li: a(href='503-page.html') 503 Page
+			li: a(href='maintenance.html') Maintenance
+			li: a(href='coming-soon.html') Coming Soon
+	li
+		a(href='#') Request a Quote

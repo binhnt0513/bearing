@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Tiêu Biểu</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+             background-color: #fff;
+            padding: 10px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            width: 100px;
+        }
+        .info-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            color: #black;
+        }
+        .info-item span {
+            margin-left: 5px;
+        }
+        .info-item.address span {
+            color: black;
+        }
+        .info-item.working-hours span {
+            color: #black;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            background-color: #128f4b;
+            padding: 10px;
+            margin: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .item {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .item p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/logo.jpg" alt="DCN Việt Nam" class="logo">
+        <div class="info-section">
+            <div class="info-item">
+                <span role="img" aria-label="phone">📞</span>
+                <span>Liên hệ kinh doanh<br>0973 800 119</span>
+            </div>
+            <div class="info-item address">
+                <span role="img" aria-label="location">📍</span>
+                <span>Địa chỉ<br>KTT trường THPT Mỹ Hào, Nguyễn Lân, Bán Yên, Hưng Yên</span>
+            </div>
+            <div class="info-item working-hours">
+                <span role="img" aria-label="clock">⏰</span>
+                <span>Giờ làm việc<br>T.Hai - T.Sáu 8:00 - 18:00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <h1>Sản Phẩm Tiêu Biểu</h1>
+        <div class="grid">
+            <div class="item"><img src="images/sliders/0000547B_rwd_600.jpg" alt="Sản phẩm 1">
+                <p>Vòng bi - Bạc đạn cầu</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-1.jpg" alt="Sản phẩm 2">
+                <p>Vòng bi - Bạc đạn đỡ cầu chặn</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-2.jpg" alt="Sản phẩm 3">
+                <p>Vòng bi - Bạc đạn tang trống3</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-3.jpg" alt="Sản phẩm 4">
+                <p>Vòng bi - Bạc đạn tang trống chặn trục</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-4.jpg" alt="Sản phẩm 5">
+                <p>Vòng bi - Bạc đạn đũa</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-5.jpg" alt="Sản phẩm 6">
+                <p>Vòng bi - Bạc đạn cầu tự lựa</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-6.jpg" alt="Sản phẩm 7">
+                <p>Vòng bi - Bạc đạn chặn trục</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-7.jpg" alt="Sản phẩm 8">
+                <p>Vòng bi - Bạc đạn côn</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-8.jpg" alt="Sản phẩm 9">
+                <p>Vòng bi - Bạc đạn kim</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-9.jpg" alt="Sản phẩm 10">
+                <p>Vòng bi - Bạc đạn tiếp xúc 4 điểm</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-10.jpg" alt="Sản phẩm 11">
+                <p>Vòng bi - Bạc đạn tiếp xúc góc hai dãy</p>
+            </div>
+            <div class="item"><img src="images/products/dcn-11.jpg" alt="Sản phẩm 12">
+                <p>Phụ kiện vòng bi</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
